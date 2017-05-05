@@ -50,7 +50,7 @@
     "test": "npm run test:cli && npm run test:server && standard",
     "test:cli": "npm run build && cross-env NODE_ENV=test mocha test/cli/*.js",
     "test:server": "cross-env NODE_ENV=test mocha test/server/*.js",
-    "start": "babel-node src/cli/bin",
+    "start": "json-server wp-cats.json",
     "precommit": "npm test",
     "build": "babel src -d lib --copy-files",
     "toc": "markdown-toc -i README.md",
